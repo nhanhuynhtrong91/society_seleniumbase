@@ -65,3 +65,8 @@ class Table:
     TABLE = ("table")
     ROW = ("table tbody tr")
     CELL = ("td")
+    
+class DashboardLocators:
+    BOOKING_BTN = ("[wire\:click=\"showBookAmenityDetail(1)\"]")
+    BOOKING_MODAL = (".jetstream-modal[x-data*=Book]")
+    MODAL_TITLE = (".text-lg")

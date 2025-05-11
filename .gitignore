@@ -1,5 +1,6 @@
 base/__pycache__
 pages/__pycache__
+pages/components/__pycache__
 tests/__pycache__
 utils/__pycache__
 data/*

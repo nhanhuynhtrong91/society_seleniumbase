@@ -31,6 +31,9 @@ class BasePage(object):
 
     def wait(self, seconds):
         self.driver.sleep(seconds)
+    
+    def find_element(self, locator):
+        return self.driver.find_element(locator)
         
     def find_elements(self, locator):
         return self.driver.find_elements(locator)
