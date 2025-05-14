@@ -68,5 +68,18 @@ class Table:
     
 class DashboardLocators:
     BOOKING_BTN = ("[wire\:click=\"showBookAmenityDetail(1)\"]")
+    RENT_DETAILS_BTN = ("[wire\:click=\"showRentDetails(3)\"]")
     BOOKING_MODAL = (".jetstream-modal[x-data*=Book]")
+    RENT_DETAILS = ('.jetstream-modal[x-data*="showRentModal"]')
     MODAL_TITLE = (".text-lg")
+    #CANCEL_BUTTON = (r'[wire\:click="$dispatch(\'hideRentDetail\')"] button')
+
+
+
+
+
+
+
+
+
+    
