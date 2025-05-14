@@ -16,18 +16,18 @@ class DashboardPage(BasePage):
         self.booking_modal = ModalComponent(self.driver, (By.CSS_SELECTOR, DashboardLocators.BOOKING_MODAL))
         self.rent_detail_button = self.find_element(DashboardLocators.RENT_DETAILS_BTN)
         self.rent_detail_modal = ModalComponent(self.driver, (By.CSS_SELECTOR, DashboardLocators.RENT_DETAILS))
-        #self.cancel_button = self.find_element(DashboardLocators.CANCEL_BUTTON)
+        
 
     def openBookingModal(self):
         self.booking_button.click()
         
-    #def closeBookingModal(self):
-        #self.cancel_button.click()
+    def closeBookingModal(self):
+        self.find_element(DashboardLocators.BOOKING_MODAL + " " + DashboardLocators.CANCEL_BUTTON).click()
         
     def openRentDetailModal(self):
         self.rent_detail_button.click()
         
-    #def closeRentDetailModal(self):
-        #self.cancel_button.click()
+    def closeRentDetailModal(self):
+        self.find_element(DashboardLocators.RENT_DETAILS + " " + DashboardLocators.CANCEL_BUTTON).click()
         
     
