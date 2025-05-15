@@ -1,5 +1,7 @@
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.common.by import By
+from pages.components.form import FormComponent
+
 
 class ModalComponent:
     def __init__(self, driver: WebDriver, modal_locator: tuple):
@@ -21,7 +23,16 @@ class ModalComponent:
         button_element = self.modal_element.find_element(*button_locator)
         button_element.click()
 
+    def open(self, open_button_locator: tuple):
+        open_button = self.modal_element.find_element(*open_button_locator)
+        open_button.click()
+        
     def close(self, close_button_locator: tuple):
         close_button = self.modal_element.find_element(*close_button_locator)
         close_button.click()
+    
+    def withForm(self):
+        self.form = FormComponent(self.driver)
+        return self
+
 

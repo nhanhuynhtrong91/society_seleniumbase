@@ -74,6 +74,12 @@ class DashboardLocators:
     MODAL_TITLE = (".text-lg")
     CANCEL_BUTTON = ('button')
 
+class AssetDetailsPageLocators:
+    ADD_APARTMENT_BUTTON = ("button")
+    APARTMENT_FORM = ("wire\:submit=\"saveMaintenance\"")
+    ISSUE_FORM = ("wire\:submit=\"saveAssetIssue\"")
+    SAVE_APARTMENT_BUTTON = ("wire\:submit=\"saveMaintenance\" button[type=\"submit\"]")    
+    SAVE_ISSUE_BUTTON = ("wire\:submit=\"saveAssetIssue\" button[type=\"submit\"]") 
 
 
 
